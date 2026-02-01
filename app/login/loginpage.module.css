@@ -1,0 +1,114 @@
+.container {
+    display: flex;
+    margin-top: 50px;
+    align-items: center;
+    justify-content: center;
+}
+.wrapper {
+    display: flex;
+    gap: 50px;
+    border-radius: 10px;
+    flex-direction: column;
+    padding: 120px 120px;
+    background: var(--softbg);
+}
+.socialButton {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 12px;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    border-radius: 5px;
+    font-size: 16px;
+  
+}
+.socialButton:first-child {
+    background-color: #3b5998;
+    color: white;
+}
+.socialButton:nth-child(2) {
+    background-color: #41adbe;
+    color: white;
+}
+.socialButton:last-child {
+    background-color: #db4437;
+    color: white;
+}
+
+/* Spinner styles */
+.LoadingContainer {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.spinner {
+  animation: spin 1s linear infinite;
+  color: #2563eb; /* blue-600 */
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+
+/* Extra small devices (>_360px) */
+@media (min-width: 360px) {
+  .wrapper {
+    padding: 40px 20px;
+    gap: 20px;
+  }
+
+  .socialButton {
+    font-size: 12px;
+    padding: 10px;
+  }
+}
+
+/* Small devices (phones ≥480px) */
+@media (min-width: 480px) {
+  .wrapper {
+    padding: 60px 30px;
+    gap: 25px;
+  }
+
+  .socialButton {
+    font-size: 14px;
+    padding: 11px;
+  }
+}
+
+/* Medium devices (tablets ≥768px) */
+@media (min-width: 768px) {
+  .wrapper {
+    padding: 80px 60px;
+    gap: 30px;
+  }
+
+  .socialButton {
+    font-size: 16px;
+    padding: 12px;
+  }
+}
+
+/* Large devices (laptops ≥1024px) */
+@media (min-width: 1024px) {
+  .wrapper {
+    padding: 100px 100px;
+    gap: 40px;
+  }
+}
+
+/* Extra large devices (desktops ≥1400px) */
+@media (min-width: 1400px) {
+  .wrapper {
+    padding: 120px 120px;
+    gap: 50px;
+  }
+}

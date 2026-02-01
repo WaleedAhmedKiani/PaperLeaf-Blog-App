@@ -1,0 +1,22 @@
+.container {
+  display: flex;
+  align-items: center;
+}
+
+.toggleBtn {
+   width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: none;
+  background: var(--softbg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.toggleBtn:hover {
+  background: var(--primary);
+  color: white;
+}

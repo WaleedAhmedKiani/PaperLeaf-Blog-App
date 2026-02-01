@@ -1,0 +1,125 @@
+/* WRAPPER FOR ALL CARDS */
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+/* SINGLE CARD LAYOUT */
+.container {
+  display: flex;
+  gap: 30px;
+  align-items: center; 
+  padding: 24px 0;
+  border-bottom: 1px solid var(--softbg);
+}
+
+/* IMAGE */
+.imgContainer {
+  flex-shrink: 0;
+}
+
+.image {
+  border-radius: var(--radius);
+  object-fit: cover;
+
+}
+
+/* TEXT */
+.textContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 12px;
+  flex: 1;
+}
+
+.detail {
+  display: flex;
+  gap: 12px;
+  font-size: 14px;
+  color: var(--secondary);
+}
+
+.heading {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--foreground);
+}
+
+.desc {
+  font-size: 1rem;
+  opacity: 0.85;
+}
+
+.readMore {
+  margin-top: 10px;
+  font-weight: 600;
+  color: var(--primary);
+}
+
+
+
+/* ---------- BREAKPOINTS ---------- */
+
+/* =============== TABLETS (768px) =============== */
+@media (max-width: 1024px) {
+  .container {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+  }
+
+  .image {
+    width: 100%;
+    height: auto;
+  }
+
+  .heading {
+    font-size: 1.3rem;
+  }
+}
+
+
+/* =============== LARGE PHONES (640px) =============== */
+@media (max-width: 640px) {
+  .container {
+    gap: 15px;
+  }
+
+  .heading {
+    font-size: 1.2rem;
+  }
+
+  .desc {
+    font-size: 0.95rem;
+  }
+}
+
+
+/* =============== SMALL PHONES (475px) =============== */
+@media (max-width: 475px) {
+  .heading {
+    font-size: 1.15rem;
+  }
+  .image{
+    width: 200px;
+    height: 120px;
+  }
+}
+
+
+/* =============== EXTRA SMALL PHONES (360px) =============== */
+@media (max-width: 360px) {
+  .heading {
+    font-size: 1.05rem;
+  }
+
+  .detail {
+    font-size: 12px;
+  }
+
+  .desc {
+    font-size: 0.9rem;
+  }
+}

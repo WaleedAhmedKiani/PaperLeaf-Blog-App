@@ -1,0 +1,57 @@
+/* Scoped container for About page */
+.container {
+  min-height: 100vh;
+  background-color: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-base);
+  padding: 40px 20px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* Heading inside About container */
+.title {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+  color: var(--foreground);
+}
+
+/* Paragraphs inside About container */
+.text {
+  font-size: 1rem;
+  line-height: 1.7;
+  margin-bottom: 15px;
+  color: var(--foreground);
+}
+
+/* Optional highlighted text */
+.highlight {
+  font-weight: 600;
+  color: var(--primary);
+}
+
+/* Responsive */
+@media screen and (max-width: 768px) {
+  .container {
+    padding: 30px 15px;
+  }
+  .title {
+    font-size: 1.8rem;
+  }
+  .text {
+    font-size: 0.95rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .container {
+    padding: 20px 10px;
+  }
+  .title {
+    font-size: 1.6rem;
+  }
+  .text {
+    font-size: 0.9rem;
+  }
+}

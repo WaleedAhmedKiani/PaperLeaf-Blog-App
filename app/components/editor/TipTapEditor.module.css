@@ -1,0 +1,33 @@
+.editor {
+  border: 1px solid #ccc;
+  padding: 12px;
+  min-height: 150px;
+  border-radius: var(--radius);
+  outline: none;
+  font-size: 16px;
+  line-height: 1.5;
+  background-color: var(--background);
+  color: var(--foreground);
+
+  border: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+/* Headings inside editor */
+.editor h1,
+.editor h2,
+.editor h3,
+.editor h4,
+.editor h5,
+.editor h6,
+.editor strong,
+.editor li {
+  color: var(--foreground); /* dark/light mode safe */
+}
+
+.editor :global(p.is-editor-empty:first-child::before) {
+  content: attr(data-placeholder);
+  color: #999;
+  float: left;
+  height: 0;
+  pointer-events: none;
+}

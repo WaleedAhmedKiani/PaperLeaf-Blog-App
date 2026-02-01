@@ -1,0 +1,144 @@
+/* ================= Footer Base (Mobile First) ================= */
+.footer {
+    margin-top: 5rem;
+    padding: 2rem 1rem 1.5rem;
+    background: var(--softbg);
+    color: var(--secondary);
+}
+
+.wrapper {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    max-width: 100%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+/* BRAND */
+.brand {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-weight: 700;
+    color: var(--foreground);
+}
+
+.tagline {
+    font-size: 14px;
+    line-height: 1.6;
+    color: var(--secondary);
+    max-width: 280px;
+}
+
+/* COLUMN HEADINGS */
+.heading {
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--foreground);
+    margin-bottom: 0.5rem;
+}
+
+/* LINKS */
+.column a {
+    display: block;
+    color: var(--secondary);
+    text-decoration: none;
+
+}
+
+.column a:hover {
+    color: var(--primary);
+}
+
+/* TAGS */
+.tags {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    line-height: 1.6;
+    gap: 8px;
+    font-weight: 600;
+
+}
+
+.tag {
+    cursor: pointer;
+}
+
+.tag:hover {
+    color: var(--primary);
+}
+
+/* SOCIAL */
+.social {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    align-items: center;
+}
+
+.social a {
+    color: var(--secondary);
+    transition: color 0.2s ease;
+}
+
+.social a:hover {
+    color: var(--primary);
+}
+
+/* BOTTOM */
+.bottom {
+    margin-top: 2rem;
+    padding-top: 1rem;
+    border-top: 1px solid rgba(0, 0, 0, 0.08);
+    text-align: center;
+    font-size: 13px;
+    color: var(--secondary);
+}
+
+/* ================= Tablet (≥ 768px) ================= */
+@media (min-width: 768px) {
+    .wrapper {
+        grid-template-columns: 2fr 1fr 1fr 1fr;
+        text-align: left;
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+    .brand {
+        align-items: flex-start;
+    }
+
+    .column {
+        align-items: flex-start;
+    }
+
+    .tags {
+        justify-content: flex-start;
+    }
+
+    .social {
+        justify-content: flex-start;
+    }
+
+    .tagline {
+        font-size: 16px;
+        max-width: 320px;
+    }
+}
+
+/* ================= Large Desktop (≥ 1200px) ================= */
+@media (min-width: 1200px) {
+    .tagline {
+        font-size: 18px;
+        max-width: 350px;
+    }
+}

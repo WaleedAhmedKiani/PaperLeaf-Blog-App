@@ -1,0 +1,92 @@
+/* Main container for Contact page */
+.container {
+  min-height: 100vh;
+  background-color: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-base);
+  padding: 40px 20px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* Heading inside Contact page */
+.title {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+  color: var(--foreground);
+}
+
+/* Paragraphs or descriptions */
+.text {
+  font-size: 1rem;
+  line-height: 1.7;
+  margin-bottom: 15px;
+  color: var(--foreground);
+}
+
+/* Form container */
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+/* Input fields and textarea */
+.input {
+  padding: 10px 12px;
+  border-radius: var(--radius);
+  border: 1px solid var(--softbg);
+  background-color: var(--softbg);
+  color: var(--foreground);
+  font-size: 1rem;
+  font-family: var(--font-base);
+}
+
+/* Textarea */
+.textarea {
+  min-height: 120px;
+  resize: vertical;
+}
+
+/* Submit button */
+.button {
+  padding: 12px 20px;
+  background-color: var(--primary);
+  color: #fff;
+  font-weight: 600;
+  border: none;
+  border-radius: var(--radius);
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+.button:hover {
+  background-color: #0551c4;
+}
+
+/* Responsive */
+@media screen and (max-width: 768px) {
+  .container {
+    padding: 30px 15px;
+  }
+  .title {
+    font-size: 1.8rem;
+  }
+  .text {
+    font-size: 0.95rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .container {
+    padding: 20px 10px;
+  }
+  .title {
+    font-size: 1.6rem;
+  }
+  .text {
+    font-size: 0.9rem;
+  }
+}

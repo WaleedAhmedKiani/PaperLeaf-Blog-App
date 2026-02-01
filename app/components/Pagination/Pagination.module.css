@@ -1,0 +1,101 @@
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  margin: 40px 0;
+}
+
+.button {
+  padding: 8px 16px;
+  border-radius: 6px;
+  border: 1px solid #e5e7eb;
+  background-color: #ffffff;
+  color: #111827;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.button:hover:not(:disabled) {
+  background-color: #111827;
+  color: #ffffff;
+  border-color: #111827;
+}
+
+.button:disabled {
+  cursor: not-allowed;
+  opacity: 0.5;
+}
+
+.page {
+  font-size: 14px;
+  font-weight: 500;
+  color: #374151;
+}
+
+/* ---------- Mobile (up to 480px) ---------- */
+@media (max-width: 480px) {
+  .container {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .button {
+    width: 100%;
+    font-size: 13px;
+    padding: 8px 12px;
+  }
+
+  .page {
+    font-size: 13px;
+  }
+}
+
+/* ---------- Small Tablets (481px – 768px) ---------- */
+@media (min-width: 481px) and (max-width: 768px) {
+  .container {
+    gap: 12px;
+  }
+
+  .button {
+    font-size: 14px;
+    padding: 8px 14px;
+  }
+}
+
+/* ---------- Tablets & Small Laptops (769px – 1024px) ---------- */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .container {
+    gap: 14px;
+  }
+
+  .button {
+    font-size: 14px;
+    padding: 9px 16px;
+  }
+}
+
+/* ---------- Laptops & Desktops (1025px – 1440px) ---------- */
+@media (min-width: 1025px) and (max-width: 1440px) {
+  .container {
+    gap: 16px;
+  }
+}
+
+/* ---------- Large Screens (1441px and above) ---------- */
+@media (min-width: 1441px) {
+  .container {
+    gap: 18px;
+  }
+
+  .button {
+    font-size: 15px;
+    padding: 10px 18px;
+  }
+
+  .page {
+    font-size: 15px;
+  }
+}
