@@ -7,7 +7,8 @@ import { categoryIcons } from '../../../lib/categoryIcons';
 
 
 const getCategories = async () => {
-  const res = await fetch("http://localhost:3000/api/categories", {
+  const baseURL = process.env.NEXT_PUBLIC_BASE_URL;
+  const res = await fetch(`${baseURL}/api/categories`, {
     cache: "no-store",
   });
   if (!res.ok) throw new Error("Failed to fetch categories");

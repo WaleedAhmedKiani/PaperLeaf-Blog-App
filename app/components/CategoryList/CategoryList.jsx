@@ -3,7 +3,8 @@ import styles from "./CategoryList.module.css";
 import { categoryIcons } from "../../../lib/categoryIcons";
 
 const getData = async () => {
-  const res = await fetch("http://localhost:3000/api/categories", { cache: "no-store" });
+  const baseURL = process.env.NEXT_PUBLIC_BASE_URL;
+  const res = await fetch(`${baseURL}/api/categories`, { cache: "no-store" });
   if (!res.ok) throw new Error("Failed to fetch data");
   return res.json();
 };
