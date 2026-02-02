@@ -1,36 +1,150 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+🚀 Tech Stack
+Frontend
 
-## Getting Started
+⚛️ Next.js 16 (App Router)
 
-First, run the development server:
+📦 Lucide React Icons
 
-```bash
+📝 TipTap Editor (Rich Text Editor)
+
+🌐 Next/Image for optimized images
+
+Backend
+
+🔐 NextAuth.js (Google OAuth 2.0)
+
+🗄 Prisma ORM
+
+🍃 MongoDB (Atlas)
+
+Cloud Services
+
+☁️ Cloudinary – Image & video upload + asset optimization
+
+▲ Vercel – Hosting & CI/CD
+
+✨ Features
+🔥 User Features
+
+✔ Create posts using a rich TipTap editor
+✔ Upload images/videos via Cloudinary
+✔ Edit or delete your own posts
+✔ Login with Google OAuth
+✔ Comment on posts (auth required)
+✔ Fully responsive UI
+✔ Clean and modern minimal design
+
+🛠️ Admin / Author Features
+
+✔ Write new blog posts
+✔ Auto-generated slug for SEO
+✔ Server-side validation
+✔ Secure authenticated routes
+
+📄 Pages & Modules
+Home Page
+
+Displays all posts
+
+Post cards with images, date, category, author, etc.
+
+Post Details Page
+
+Full story
+
+Reading-friendly layout
+
+Comment section (only logged-in users can post comments)
+
+Write Page
+
+TipTap rich text editor
+
+Upload cover image using Cloudinary
+
+Create & publish new stories
+
+Authentication
+
+Google OAuth login
+
+Protected write/comment routes
+
+🧩 Database Schema (Prisma ORM)
+Models:
+
+User (Google OAuth)
+
+Post (title, slug, content, coverImage, authorId…)
+
+Comment (text, postId, userId…)
+
+☁️ Cloudinary Integration
+
+Upload images & videos directly from TipTap
+
+Secure upload preset
+
+Next.js API route handles media upload
+
+🔐 Environment Variables
+
+Your project uses the following env variables:
+
+NEXTAUTH_URL=
+NEXTAUTH_SECRET=
+
+GOOGLE_CLIENT_ID=
+GOOGLE_CLIENT_SECRET=
+
+DATABASE_URL=
+DIRECT_URL=
+
+NEXT_PUBLIC_CLOUDINARY_CLOUD_NAME=
+NEXT_PUBLIC_CLOUDINARY_UPLOAD_PRESET=
+
+NEXT_PUBLIC_BASE_URL=
+
+
+Make sure to configure them in .env.local and Vercel.
+
+🏗️ Installation & Setup
+1️⃣ Clone repo
+git clone https://github.com/your-username/paperleaf-blog.git
+cd paperleaf-blog
+
+2️⃣ Install dependencies
+npm install
+
+3️⃣ Add .env.local with your credentials
+4️⃣ Push Prisma Schema
+npx prisma generate
+npx prisma db push
+
+5️⃣ Start dev server
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+🚀 Deployment (Vercel)
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+Push code to GitHub repo
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Connect repo in Vercel
 
-## Learn More
+Add all Environment Variables
 
-To learn more about Next.js, take a look at the following resources:
+Redeploy
+✔ Google OAuth redirect_uri
+✔ Cloudinary working
+✔ Prisma on MongoDB Atlas
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+🖼️ Screenshots (Optional Section)
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Add screenshots of your UI later.
 
-## Deploy on Vercel
+🙏 Credits
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Built by Waleed Ahmed (full-stack MERN/Next.js developer).
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+⭐ Support
+
+If you like this project, give it a star on GitHub ⭐ and share it!
