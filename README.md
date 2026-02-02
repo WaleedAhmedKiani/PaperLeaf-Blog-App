@@ -1,30 +1,30 @@
-🚀 Tech Stack
-Frontend
+<h2>Tech Stack</h2>
+<b>Frontend</b>
 
-⚛️ Next.js 16 (App Router)
+ Next.js 16 (App Router)
 
-📦 Lucide React Icons
+ Lucide React Icons
 
-📝 TipTap Editor (Rich Text Editor)
+TipTap Editor (Rich Text Editor)
 
-🌐 Next/Image for optimized images
+ Next/Image for optimized images
 
-Backend
+<b>Backend</b>
 
-🔐 NextAuth.js (Google OAuth 2.0)
+ NextAuth.js (Google OAuth 2.0)
 
-🗄 Prisma ORM
+ Prisma ORM
 
-🍃 MongoDB (Atlas)
+ MongoDB (Atlas)
 
-Cloud Services
+<h2>Cloud Services</h2>
 
 ☁️ Cloudinary – Image & video upload + asset optimization
 
 ▲ Vercel – Hosting & CI/CD
 
-✨ Features
-🔥 User Features
+<b>Features<b>
+<h3User Features</h3>
 
 ✔ Create posts using a rich TipTap editor
 ✔ Upload images/videos via Cloudinary
@@ -34,14 +34,14 @@ Cloud Services
 ✔ Fully responsive UI
 ✔ Clean and modern minimal design
 
-🛠️ Admin / Author Features
+<h2 Admin / Author Features></h2>
 
 ✔ Write new blog posts
 ✔ Auto-generated slug for SEO
 ✔ Server-side validation
 ✔ Secure authenticated routes
 
-📄 Pages & Modules
+<h2>Pages & Modules</h2>
 Home Page
 
 Displays all posts
@@ -70,7 +70,7 @@ Google OAuth login
 
 Protected write/comment routes
 
-🧩 Database Schema (Prisma ORM)
+ Database Schema (Prisma ORM)
 Models:
 
 User (Google OAuth)
@@ -108,8 +108,8 @@ NEXT_PUBLIC_BASE_URL=
 
 Make sure to configure them in .env.local and Vercel.
 
-🏗️ Installation & Setup
-1️⃣ Clone repo
+<h2> Installation & Setup</h2>
+  Clone repo
 git clone https://github.com/your-username/paperleaf-blog.git
 cd paperleaf-blog
 
@@ -124,7 +124,7 @@ npx prisma db push
 5️⃣ Start dev server
 npm run dev
 
-🚀 Deployment (Vercel)
+<h2>Deployment (Vercel)</h2>
 
 Push code to GitHub repo
 
@@ -137,14 +137,12 @@ Redeploy
 ✔ Cloudinary working
 ✔ Prisma on MongoDB Atlas
 
-🖼️ Screenshots (Optional Section)
 
-Add screenshots of your UI later.
 
-🙏 Credits
+<h2>Credits</h2>
 
 Built by Waleed Ahmed (full-stack MERN/Next.js developer).
 
-⭐ Support
+<b>Support</b>
 
 If you like this project, give it a star on GitHub ⭐ and share it!
